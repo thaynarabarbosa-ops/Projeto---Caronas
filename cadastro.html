@@ -1,1 +1,64 @@
-<form><input placeholder='Nome'><input placeholder='E-mail'><button>Cadastrar</button></form>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Cadastro</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Cadastro</h1>
+
+</header>
+
+<div class="container">
+
+<form action="../CadastroServlet" method="post">
+
+<input
+type="text"
+name="nome"
+placeholder="Nome"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="E-mail IFSP"
+required>
+
+<input
+type="password"
+name="senha"
+placeholder="Senha"
+required>
+
+<select name="tipo">
+
+<option value="Motorista">Motorista</option>
+
+<option value="Passageiro">Passageiro</option>
+
+</select>
+
+<button type="submit">
+
+Cadastrar
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
