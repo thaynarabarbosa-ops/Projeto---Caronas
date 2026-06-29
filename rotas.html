@@ -1,1 +1,45 @@
-<h2>Cadastro de Rotas</h2><form><input placeholder='Origem'><input placeholder='Destino'></form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Rota</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cadastro de Rota</h1>
+</header>
+
+<div class="container">
+
+<form action="../RotaServlet" method="post">
+
+<label>Origem</label>
+<input type="text" name="origem" required>
+
+<label>Destino</label>
+<input type="text" name="destino" required>
+
+<label>Horário</label>
+<input type="datetime-local" name="horario" required>
+
+<label>Vagas</label>
+<input type="number" name="vagas" min="1" required>
+
+<button type="submit">
+Cadastrar Rota
+</button>
+
+</form>
+
+<br>
+
+<a href="busca.html">
+<button>Buscar Rotas</button>
+</a>
+
+</div>
+
+</body>
+</html>
